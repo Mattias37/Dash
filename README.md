@@ -1,9 +1,8 @@
 # Dash
-A Next.js starter based on the Forty site template, designed by HTML5 UP. Check out https://codebushi.com/nextjs-website-starters/ for more Next.js starters and templates.
+
 
 ## Preview
 
-http://nextjs-forty.surge.sh/
 
 ## Getting Started
 
