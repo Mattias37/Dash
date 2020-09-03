@@ -22,6 +22,8 @@ import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
+import Orders1 from './Orders1';
+import Orders2 from './Orders2';
 
 function Copyright() {
   return (
@@ -152,7 +154,7 @@ export default function Dashboard() {
           <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Dash Influencer
+            Dash Brand: Nike
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
@@ -198,6 +200,18 @@ export default function Dashboard() {
             <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <Orders />
+              </Paper>
+            </Grid>
+            {/* Recent Orders */}
+            <Grid item xs={6}>
+              <Paper className={classes.paper}>
+                <Orders2 />
+              </Paper>
+            </Grid>
+            {/* Recent Orders */}
+            <Grid item xs={6}>
+              <Paper className={classes.paper}>
+                <Orders1 />
               </Paper>
             </Grid>
           </Grid>

@@ -20,15 +20,17 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
+import Chart1 from './Chart1';
 import Deposits from './Deposits';
 import Orders from './Orders';
+import Orders1 from './Orders1';
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        Dash Influencer 2020
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -198,6 +200,18 @@ export default function Dashboard() {
             <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <Orders />
+              </Paper>
+            </Grid>
+            {/* Recent Orders */}
+            <Grid item xs={6}>
+              <Paper className={classes.paper}>
+                <Orders1 />
+              </Paper>
+            </Grid>
+            {/* Chart */}
+            <Grid item xs={6} md={6} lg={6}>
+              <Paper className={fixedHeightPaper}>
+                <Chart1 />
               </Paper>
             </Grid>
           </Grid>

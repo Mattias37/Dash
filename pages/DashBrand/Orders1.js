@@ -14,11 +14,11 @@ function createData(id, date, name, shipTo, paymentMethod, amount) {
 }
 
 const rows = [
-  createData(0, '16 Mar, 2019', 'Elvis Presley', 'Tupelo, MS', 'VISA ⠀•••• 3719', 312.44),
-  createData(1, '16 Mar, 2019', 'Paul McCartney', 'London, UK', 'VISA ⠀•••• 2574', 866.99),
-  createData(2, '16 Mar, 2019', 'Tom Scholz', 'Boston, MA', 'MC ⠀•••• 1253', 100.81),
-  createData(3, '16 Mar, 2019', 'Michael Jackson', 'Gary, IN', 'AMEX ⠀•••• 2000', 654.39),
-  createData(4, '15 Mar, 2019', 'Bruce Springsteen', 'Long Branch, NJ', 'VISA ⠀•••• 5919', 212.79),
+  createData(0, '@jhgkjhg', 'Elvis Presley', '400', '45%', 'Contratar'),
+  createData(1, '@jhgkjhg', 'Paul McCartney', '543', '54', 'Contratar'),
+  createData(2, '@jhgkjhg', 'Tom Scholz', '323', '46%', 'Contratar'),
+  createData(3, '@jhgkjhg', 'Michael Jackson', '340', '78%', 'Contratar'),
+  createData(4, '@jhgkjhg', 'Bruce Springsteen', '340', '87%', 'Contratar'),
 ];
 
 function preventDefault(event) {
@@ -35,15 +35,20 @@ export default function Orders() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Mis Campañas</Title>
+      <Title>Influencers
+      </Title>
       <Table size="small">
         <TableHead>
+        <TableRow>
+          <TableCell>Filtro</TableCell>
+          <TableCell>Nombre</TableCell>
+        </TableRow>
           <TableRow>
+            <TableCell>Id</TableCell>
             <TableCell>Nombre</TableCell>
-            <TableCell>Descripción</TableCell>
-            <TableCell>Pauta</TableCell>
-            <TableCell>Fecha Dash</TableCell>
-            <TableCell align="right">Acceptar</TableCell>
+            <TableCell>DashPoints</TableCell>
+            <TableCell>Afinidad</TableCell>
+            <TableCell align="right"> Contratar</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -60,7 +65,7 @@ export default function Orders() {
       </Table>
       <div className={classes.seeMore}>
         <Link color="primary" href="#" onClick={preventDefault}>
-          See more orders
+          Ver más
         </Link>
       </div>
     </React.Fragment>

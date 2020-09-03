@@ -20,51 +20,53 @@ export const mainListItems = (
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <AssignmentIcon />
       </ListItemIcon>
       <ListItemText primary="Presupuestos" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <PeopleIcon />
-      </ListItemIcon>
-      <ListItemText primary="Audiencias" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
-      <ListItemText primary="Campañas" />
+      <ListItemText primary="Consejos" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <LayersIcon />
+
+        <PeopleIcon />
       </ListItemIcon>
-      <ListItemText primary="Integrations" />
+      <ListItemText primary="Soporte" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+
+        <PeopleIcon />
+      </ListItemIcon>
+      <ListItemText primary="PQRs" />
     </ListItem>
   </div>
 );
 
 export const secondaryListItems = (
   <div>
-    <ListSubheader inset>Saved reports</ListSubheader>
+    <ListSubheader inset>Dash Extractos</ListSubheader>
     <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Current month" />
+      <ListItemText primary="Mes actual" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Last quarter" />
+      <ListItemText primary="Trimestre" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Year-end sale" />
+      <ListItemText primary="Anual" />
     </ListItem>
   </div>
 );

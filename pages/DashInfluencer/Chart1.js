@@ -25,7 +25,7 @@ export default function Chart() {
 
   return (
     <React.Fragment>
-      <Title>Influencers</Title>
+      <Title>Rendimiento Campaña 1</Title>
       <ResponsiveContainer>
         <LineChart
           data={data}

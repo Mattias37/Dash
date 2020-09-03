@@ -8,7 +8,7 @@
     "clsx": "latest",
     "next": "latest",
     "prop-types": "latest",
-    "recharts": "^1.8.5",
+    "recharts": "latest",
     "react": "latest",
     "react-dom": "latest"
   },

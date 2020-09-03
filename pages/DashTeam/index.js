@@ -20,8 +20,14 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
+import Chart1 from './Chart1';
 import Deposits from './Deposits';
+import Deposits1 from './Deposits1';
 import Orders from './Orders';
+import Orders1 from './Orders1';
+import Orders2 from './Orders2';
+import Orders3 from './Orders3';
+import Orders4 from './Orders4';
 
 function Copyright() {
   return (
@@ -152,7 +158,7 @@ export default function Dashboard() {
           <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Dash Influencer
+            Dash Team: Pascual
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
@@ -183,15 +189,27 @@ export default function Dashboard() {
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
             {/* Chart */}
-            <Grid item xs={12} md={8} lg={9}>
+            <Grid item xs={12} md={8} lg={8}>
               <Paper className={fixedHeightPaper}>
                 <Chart />
               </Paper>
             </Grid>
             {/* Recent Deposits */}
-            <Grid item xs={12} md={4} lg={3}>
+            <Grid item xs={12} md={4} lg={4}>
               <Paper className={fixedHeightPaper}>
                 <Deposits />
+              </Paper>
+            </Grid>
+            {/* Chart */}
+            <Grid item xs={12} md={8} lg={8}>
+              <Paper className={fixedHeightPaper}>
+                <Chart1 />
+              </Paper>
+            </Grid>
+            {/* Recent Deposits */}
+            <Grid item xs={12} md={4} lg={4}>
+              <Paper className={fixedHeightPaper}>
+                <Deposits1 />
               </Paper>
             </Grid>
             {/* Recent Orders */}
@@ -200,7 +218,32 @@ export default function Dashboard() {
                 <Orders />
               </Paper>
             </Grid>
+            {/* Recent Orders */}
+            <Grid item xs={12}>
+              <Paper className={classes.paper}>
+                <Orders1 />
+              </Paper>
+            </Grid>
+            {/* Recent Orders */}
+            <Grid item xs={12}>
+              <Paper className={classes.paper}>
+                <Orders2 />
+              </Paper>
+            </Grid>
+            {/* Recent Orders */}
+            <Grid item xs={6}>
+              <Paper className={classes.paper}>
+                <Orders3 />
+              </Paper>
+            </Grid>
+            {/* Recent Orders */}
+            <Grid item xs={6}>
+              <Paper className={classes.paper}>
+                <Orders4 />
+              </Paper>
+            </Grid>
           </Grid>
+
           <Box pt={4}>
             <Copyright />
           </Box>

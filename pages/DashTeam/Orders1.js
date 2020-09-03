@@ -35,15 +35,15 @@ export default function Orders() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Mis Campañas</Title>
+      <Title>Dash Brands</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
             <TableCell>Nombre</TableCell>
-            <TableCell>Descripción</TableCell>
-            <TableCell>Pauta</TableCell>
-            <TableCell>Fecha Dash</TableCell>
-            <TableCell align="right">Acceptar</TableCell>
+            <TableCell>Campañas activas</TableCell>
+            <TableCell>Historial</TableCell>
+            <TableCell>Pauta total</TableCell>
+            <TableCell align="right">ver más</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
